@@ -1,0 +1,53 @@
+﻿@model SMA.Core.ViewModels.PostListViewModal
+
+@{
+    ViewBag.Title = "HomePage";
+}
+
+<h2>Post</h2>
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Get)){
+    //the following are search options
+    <b> Search Option: </b>
+        @Html.RadioButton("option", "Name") <text>Title</text> @Html.RadioButton("option", "Gender") <text> Category </text>
+        @Html.TextBox("search") <input type = "submit"
+    name = "submit"
+    value = "Search" />
+ }
+    <div class="col-md-2">
+        <h4>Filter by Category</h4>
+        <div class="list-group">
+            @Html.ActionLink("All", "Index", null, new { @class = Request["Category"] == null ? "list-group-item active" : "list-group-item" })
+            @foreach (var cat in Model.Categories)
+            {
+                @Html.ActionLink(cat.CategoryName, "Index", new { Category = cat.CategoryName }, new { @class = Request["Category"] == cat.CategoryName ? "list-group-item active" : "list-group-item" })
+            }
+        </div>
+    </div>
+
+
+    <div class="col-md-10">
+
+        @foreach (var item in Model.Posts)
+        {
+            <div class="col-md-12 text-center " style="width:100%; height:450px;padding:10px;margin:10px;border: solid thin black">
+                <div class="col-md-12">
+                    <img class="img-responsive center-block" style="width:auto;height:250px" src="~/Content/PostImages/@item.Image"/>
+                </div>
+                <hr />
+                <div class="col-md-12">
+                    <strong>@Html.ActionLink(item.Title, "Details", new { id = item.Id })</strong>
+                </div>
+                <div class="col-md-12">
+                    <p>@item.Description</p>
+                </div>
+                <div class="col-md-12">
+                    <a href="" class="btn btn-default">Like</a>
+                </div>
+            </div>
+        }
+
+
+    </div>
+
+

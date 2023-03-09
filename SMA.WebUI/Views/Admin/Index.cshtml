@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Admin Pages</h2>
+
+<div class="col-md-6">
+    <h4>Product Managememt</h4>
+    <div class="list-group">
+        @Html.ActionLink("Category Management", "Index", "Category", null, new { @class = "list-group-item" })
+        @Html.ActionLink("Post Management", "Index", "Post", null, new { @class = "list-group-item" })
+    </div>
+</div>
+
+
