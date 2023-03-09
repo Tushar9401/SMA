@@ -1,0 +1,12 @@
+C:\Users\TusharThakkar\source\repos\SocialMediaAggretor\SMA.Core\bin\Debug\SMA.Core.dll
+C:\Users\TusharThakkar\source\repos\SocialMediaAggretor\SMA.Core\bin\Debug\SMA.Core.pdb
+C:\Users\TusharThakkar\source\repos\SocialMediaAggretor\SMA.Core\obj\Debug\SMA.Core.csproj.AssemblyReference.cache
+C:\Users\TusharThakkar\source\repos\SocialMediaAggretor\SMA.Core\obj\Debug\SMA.Core.csproj.CoreCompileInputs.cache
+C:\Users\TusharThakkar\source\repos\SocialMediaAggretor\SMA.Core\obj\Debug\SMA.Core.dll
+C:\Users\TusharThakkar\source\repos\SocialMediaAggretor\SMA.Core\obj\Debug\SMA.Core.pdb
+C:\Users\TusharThakkar\source\repos\SocialMediaAggretor\SMA.Core\bin\Debug\SMA.Core.dll.config
+C:\Users\TusharThakkar\source\repos\SocialMediaAggretor\SMA.Core\bin\Debug\EntityFramework.dll
+C:\Users\TusharThakkar\source\repos\SocialMediaAggretor\SMA.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\TusharThakkar\source\repos\SocialMediaAggretor\SMA.Core\bin\Debug\EntityFramework.xml
+C:\Users\TusharThakkar\source\repos\SocialMediaAggretor\SMA.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\TusharThakkar\source\repos\SocialMediaAggretor\SMA.Core\obj\Debug\SMA.Core.csproj.CopyComplete
