@@ -43,23 +43,26 @@ namespace SMA.WebUI.Controllers
             var isExists=IsEmailExists(objUsr.Email);
             if (isExists)
             {
-                ModelState.AddModelError("EmailExists", "Email Already Exists");
+                ModelState.AddModelError("", "Email Already Exists");
+            }
+            else
+            {
+                //it generate unique code       
+                objUsr.ActivationCode = Guid.NewGuid().ToString();
+                //password convert    
+                objUsr.Password = Convert.ToBase64String(System.Security.Cryptography.SHA256.Create().ComputeHash(Encoding.UTF8.GetBytes(objUsr.Password)));
+                objUsr.ConfirmPassword = Convert.ToBase64String(System.Security.Cryptography.SHA256.Create().ComputeHash(Encoding.UTF8.GetBytes(objUsr.ConfirmPassword)));
+                context.Insert(objUsr);
+                context.Commit();
+
+                #region Send Verification Mail
+                SendEmailToUser.SendEmail(objUsr.Email, objUsr.ActivationCode.ToString());
+                var Message = "Registration Completed.Please Check You email :" + objUsr.Email;
+                ViewBag.Message = Message;
+                #endregion
                 return View("Registration");
             }
-            //it generate unique code       
-            objUsr.ActivationCode = Guid.NewGuid().ToString();
-            //password convert    
-            objUsr.Password = Convert.ToBase64String(System.Security.Cryptography.SHA256.Create().ComputeHash(Encoding.UTF8.GetBytes(objUsr.Password)));
-            objUsr.ConfirmPassword = Convert.ToBase64String(System.Security.Cryptography.SHA256.Create().ComputeHash(Encoding.UTF8.GetBytes(objUsr.ConfirmPassword)));
-            context.Insert(objUsr);
-            context.Commit();
-
-            #region Send Verification Mail
-            SendEmailToUser.SendEmail(objUsr.Email, objUsr.ActivationCode.ToString());
-            var Message = "Registration Completed.Please Check You email :" + objUsr.Email;
-            ViewBag.Message = Message;  
-            #endregion
-            return View("Registration");
+            return View();
         }
 
         public ActionResult UserVerification(string id)

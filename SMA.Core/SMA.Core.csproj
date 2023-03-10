@@ -54,7 +54,9 @@
     <Compile Include="Contracts\IRepository.cs" />
     <Compile Include="Models\BaseEntity.cs" />
     <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\ChangePassword.cs" />
     <Compile Include="Models\encryptPassword.cs" />
+    <Compile Include="Models\ForgotPassword.cs" />
     <Compile Include="Models\Post.cs" />
     <Compile Include="Models\UserLogin.cs" />
     <Compile Include="Models\UserRegistration.cs" />

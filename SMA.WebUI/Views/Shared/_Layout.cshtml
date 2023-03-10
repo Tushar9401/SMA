@@ -43,12 +43,12 @@
                     </ul>
                 }
 
-                @if (Request.IsAuthenticated)
+                @*@if (Request.IsAuthenticated && UserRegist.Roles=="Admin")
                 {
                     <ul class="nav navbar-nav">
                      <li>@Html.ActionLink("Admin Control", "Index", "Admin", routeValues: null, htmlAttributes: new { id = "AdminControl" })</li>
                     </ul>
-                }
+                }*@
             </div>
         </div>
     </div>

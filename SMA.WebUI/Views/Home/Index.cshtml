@@ -6,14 +6,7 @@
 
 <h2>Post</h2>
 
-@using (Html.BeginForm("Index", "Home", FormMethod.Get)){
-    //the following are search options
-    <b> Search Option: </b>
-        @Html.RadioButton("option", "Name") <text>Title</text> @Html.RadioButton("option", "Gender") <text> Category </text>
-        @Html.TextBox("search") <input type = "submit"
-    name = "submit"
-    value = "Search" />
- }
+
     <div class="col-md-2">
         <h4>Filter by Category</h4>
         <div class="list-group">

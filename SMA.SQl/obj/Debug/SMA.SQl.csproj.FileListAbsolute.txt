@@ -106,3 +106,4 @@ C:\Users\TusharThakkar\source\repos\SocialMediaAggretor\SMA.SQl\obj\Debug\SMA.SQ
 C:\Users\TusharThakkar\source\repos\SocialMediaAggretor\SMA.SQl\obj\Debug\SMA.SQl.Migrations.UserFinal.resources
 C:\Users\TusharThakkar\source\repos\SocialMediaAggretor\SMA.SQl\obj\Debug\SMA.SQl.Migrations.Changes1.resources
 C:\Users\TusharThakkar\source\repos\SocialMediaAggretor\SMA.SQl\obj\Debug\SMA.SQl.Migrations.ChangeEnabled.resources
+C:\Users\TusharThakkar\source\repos\SocialMediaAggretor\SMA.SQl\obj\Debug\SMA.SQl.Migrations.AddingRoles.resources

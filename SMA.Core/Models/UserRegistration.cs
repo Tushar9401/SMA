@@ -36,5 +36,7 @@ namespace SMA.Core.Models
 
         public string OTP { get; set; }
 
+        public string Roles { get; set; }
+
     }
 }

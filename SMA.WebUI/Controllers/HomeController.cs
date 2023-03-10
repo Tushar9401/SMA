@@ -66,5 +66,9 @@ namespace SMA.WebUI.Controllers
                 return View(post);
             }
         }
+        public ActionResult Trail()
+        {
+            return View();
+        }
     }
 }
