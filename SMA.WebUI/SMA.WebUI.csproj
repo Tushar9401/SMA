@@ -390,7 +390,9 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\login.css" />
     <Content Include="Content\styles.css" />
+    <Content Include="Content\UserRegistration\UserRegistration.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -409,6 +411,12 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Views\Home\assets\favicon.ico" />
+    <Content Include="Views\Home\assets\img\about-bg.jpg" />
+    <Content Include="Views\Home\assets\img\contact-bg.jpg" />
+    <Content Include="Views\Home\assets\img\home-bg.jpg" />
+    <Content Include="Views\Home\assets\img\post-bg.jpg" />
+    <Content Include="Views\Home\assets\img\post-sample-image.jpg" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

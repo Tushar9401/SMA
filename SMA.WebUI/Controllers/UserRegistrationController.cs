@@ -34,11 +34,10 @@ namespace SMA.WebUI.Controllers
             return IsCheck !=null;
         }
 
-
         [HttpPost]
         public ActionResult Index(UserRegistration objUsr)
         {
-            // email not verified on registration time    
+            // email not verified on registration time
             objUsr.EmailVerfication = false;
             var isExists=IsEmailExists(objUsr.Email);
             if (isExists)
